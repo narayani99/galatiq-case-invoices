@@ -168,7 +168,13 @@ export const api = {
     page?: number;
     limit?: number;
   }): Promise<InvoiceListResponse> => {
-    const response = await client.get('/api/invoices', { params });
+    const response = await client.get('/api/invoices', {
+      params: {
+        page: 1,
+        limit: 100,
+        ...params,
+      },
+    });
     return response.data;
   },
 
