@@ -1,0 +1,41 @@
+# Galatiq Invoice Processing System - Dependencies
+
+# LLM & Agent Orchestration
+langchain>=0.3
+langchain-openai>=0.3
+langgraph>=0.4
+
+# PDF Parsing
+pdfplumber>=0.11
+PyMuPDF>=1.25
+tabulate>=0.10.0
+
+# Web Framework
+fastapi>=0.115
+uvicorn>=0.34
+python-multipart>=0.0.20
+
+# Data Validation
+pydantic>=2.0
+
+# Database
+aiosqlite>=0.21
+
+# HTTP Clients
+requests>=2.32
+httpx>=0.28
+
+# Configuration
+python-dotenv>=1.1
+
+# OpenAI-compatible client (for xAI Grok API)
+openai>=1.82
+
+# Testing
+pytest>=8.3
+pytest-asyncio>=1.0
+pytest-cov>=6.1
+
+# Code Quality
+black>=25.1
+ruff>=0.11
