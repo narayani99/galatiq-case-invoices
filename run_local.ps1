@@ -16,4 +16,5 @@ Start-Process -FilePath ".venv\Scripts\python.exe" -ArgumentList "-m uvicorn src
 # Start frontend dev server
 Write-Host "Starting Frontend Dev Server..." -ForegroundColor Green
 Set-Location src/ui
+npm install
 npm run dev

@@ -17,6 +17,7 @@ BACKEND_PID=$!
 # Start frontend dev server
 echo "Starting Frontend Dev Server..."
 cd src/ui
+npm install
 npm run dev
 
 # Terminate backend on exit
